@@ -82,6 +82,9 @@ func (r response) save(pathPrefix string, noHeaders bool) (string, error) {
 		}
 	}
 
+        p2 := fmt.Sprintf("%s_response_body", p)
+	ioutil.WriteFile(p2, []byte(r.StringNoHeaders()), 0640)
+
 	err := ioutil.WriteFile(p, content, 0640)
 	if err != nil {
 		return p, err
