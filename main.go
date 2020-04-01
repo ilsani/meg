@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	userAgent = "Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)"
+	userAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98"
 
 	// argument defaults
 	defaultPathsFile = "./paths"
